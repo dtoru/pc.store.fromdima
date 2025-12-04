@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0f0f0f;
+  color: #ccc;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0f0f0f;
+  border-bottom: 2px solid #ff00ff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #ff00ff;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff00ff;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #00ffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+section.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('../images/cyberpunk-bg.gif') center/cover no-repeat;
+  color: #00ffff;
+  text-shadow: 0 0 5px #ff00ff;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section#about, section#contact {
+  max-width: 700px;
+  margin: auto;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #00ffff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.price {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff;
+}
+
+button {
+  background: #ff00ff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00ffff;
+  animation: neonPulse 1s infinite;
+}
+
+@keyframes neonPulse {
+  0%, 100% { box-shadow: 0 0 5px #ff00ff; }
+  50% { box-shadow: 0 0 20px #ff00ff; }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #ff00ff;
+  color: #ccc;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  margin: 5px 0;
+}

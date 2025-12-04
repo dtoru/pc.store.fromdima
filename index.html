@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Д-ПK Store</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">Д-ПK</div>
+  <nav>
+    <a href="index.html">Головна</a>
+    <a href="about.html">Про нас</a>
+    <a href="contacts.html">Контакти</a>
+    <a href="cart.html">Кошик 🛒 (<span id="cart-count">0</span>)</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Ласкаво просимо до Д-ПK Store</h1>
+  <p>Створюємо ігрові машини для справжніх геймерів. Потужність, стиль та надійність — усе в одному місці.</p>
+</section>
+
+<section class="catalog" id="catalog">
+  <div class="card">
+    <img src="images/pc1.png" alt="PC 1">
+    <h3>Біла збірка RTX</h3>
+    <p>Ідеальна для кібератлетів та стрімерів. Тиха, холодна та продуктивна.</p>
+    <div class="price">42 000 грн</div>
+    <button onclick="addToCart('Біла збірка RTX', 42000)">Купити</button>
+  </div>
+  <div class="card">
+    <img src="images/pc2.png" alt="PC 2">
+    <h3>Ultra White RGB</h3>
+    <p>Максимальна продуктивність та відмінний повітряний потік. RGB підсвітка нового покоління.</p>
+    <div class="price">48 000 грн</div>
+    <button onclick="addToCart('Ultra White RGB', 48000)">Купити</button>
+  </div>
+  <div class="card">
+    <img src="images/pc3.png" alt="PC 3">
+    <h3>Black RGB ROG</h3>
+    <p>Преміум клас у всьому: охолодження, продуктивність та легендарна надійність.</p>
+    <div class="price">51 000 грн</div>
+    <button onclick="addToCart('Black RGB ROG', 51000)">Купити</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Всі права захищені</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
